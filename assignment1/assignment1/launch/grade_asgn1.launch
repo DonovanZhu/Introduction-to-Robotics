@@ -1,0 +1,5 @@
+<launch>
+
+  <node pkg="assignment1" type="solution.py" name="solution" output="screen" />
+
+</launch>
