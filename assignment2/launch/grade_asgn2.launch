@@ -1,0 +1,10 @@
+<launch>
+
+  <arg name="robot_urdf_location" default="$(find lwr_defs)/robots/kuka_lwr_arm.urdf.xml" />
+
+  <param name="robot_description" 
+	 command="$(find xacro)/xacro.py '$(arg robot_urdf_location)'" />
+
+  <node pkg="assignment2" type="forward_kinematics.py" name="solution" output="screen" />
+
+</launch>
