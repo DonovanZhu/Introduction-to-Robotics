@@ -1,0 +1,10 @@
+<launch>
+
+  <node name="gui" pkg="state_estimator" type="gui.py" respawn="false" output="screen"/>
+
+  <node name="estimate" pkg="state_estimator" type="est.py" respawn="false" output="screen"/>
+
+  <node name="gui_plugin" pkg="state_estimator" type="gui_plugin.py" respawn="false" output="screen"/>
+
+
+</launch>
